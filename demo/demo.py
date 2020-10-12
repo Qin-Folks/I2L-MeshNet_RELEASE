@@ -57,7 +57,7 @@ skeleton = ( (0,1), (1,4), (4,7), (7,10), (0,2), (2,5), (5,8), (8,11), (0,3), (3
 
 # SMPl mesh
 vertex_num = 6890
-smpl_layer = SMPL_Layer(gender='neutral', model_root=cfg.smpl_path + '/smplpytorch/native/models')
+smpl_layer = SMPL_Layer(gender='neutral', model_root='/media/zhenyue-qin/local/3D-Reconstruction/Folks/l2-mesh-stuff')
 face = smpl_layer.th_faces.numpy()
 joint_regressor = smpl_layer.th_J_regressor.numpy()
 root_joint_idx = 0

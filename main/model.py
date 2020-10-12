@@ -127,6 +127,7 @@ def init_weights(m):
         nn.init.normal_(m.weight,std=0.01)
         nn.init.constant_(m.bias,0)
 
+
 def get_model(vertex_num, joint_num, mode):
     pose_backbone = ResNetBackbone(cfg.resnet_type)
     pose_net = PoseNet(joint_num)
